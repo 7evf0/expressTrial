@@ -30,4 +30,6 @@ app.use(cors({
 app.get('/ingredients', (req, res) =>{
     res.send(ingredients); 
 });
-app.listen(3000);
+app.listen(3000, () => {
+    console.log("You have connected to port 3000");
+});
